@@ -62,6 +62,7 @@ html { scrollbar-color: var(--lime) #0d111d; scrollbar-width: thin; }
 .hero-orbit { border-color:#526c91; }.orbit-two { border-color:#443f72; }
 .identity { min-height:74px; }
 .portrait-slot { flex:0 0 72px; width:72px; height:72px; background:radial-gradient(circle at 35% 30%,#72f1ff35,transparent 58%),#111827; border:1px solid var(--lime); box-shadow:0 0 0 6px #72f1ff0b,0 0 35px #72f1ff36; font-size:9px; }
+.identity img.portrait-slot { display:block; object-fit:cover; object-position:center; }
 .identity-name { font-size:22px; }
 .about-section,.explore-section,.skills-section,.leadership-section,.journey-section { grid-template-columns:minmax(250px,31%) minmax(0,1fr); }
 .project { border-color:var(--line); background:#11182799; }
