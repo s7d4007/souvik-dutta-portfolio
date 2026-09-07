@@ -108,7 +108,7 @@ html { scrollbar-color: var(--lime) #0d111d; scrollbar-width: thin; }
 .metric-block>span { margin-top:12px; color:var(--muted); font:10px var(--mono); letter-spacing:2px; }
 .metric-block.secondary { border-color:#9b8cff40; background:#9b8cff0d; }
 .metric-block.secondary strong { color:var(--violet); font-size:38px; text-shadow:0 0 24px #d08cff55; }
-.project-modal .text-link { margin-top: 42px; display: block; }
+.project-modal .text-link { margin-top: 42px; display: block; }.project-links { display:flex; flex-wrap:wrap; gap:28px; }
 @keyframes timeline-reveal { from { transform:scaleY(0); opacity:0; } to { transform:scaleY(1); opacity:1; } }
 @media (max-width:800px) { .education-section { padding:100px 8vw 110px; }.education-section:after { display:none; }.education-header { margin-bottom:58px; }.education-header h2 { font-size:66px; letter-spacing:-4px; }.education-timeline { padding-left:31px; }.timeline-progress { left:6px; }.timeline-marker { position:relative; right:auto; top:auto; margin:0 0 13px -31px; gap:10px; }.timeline-marker span { order:2; }.timeline-marker i { order:1; }.education-card { display:block; padding:25px 22px; }.metric-block { width:100%; min-height:100px; margin-top:27px; }.metric-block strong { font-size:49px; }.education-entry { margin-bottom:30px; } }
 .button-resume { color:var(--white); border-color:#4b76a6; background:linear-gradient(115deg,#162d4a,#282257); box-shadow:0 0 22px #72f1ff1c,inset 0 0 18px #72f1ff0c; }
@@ -135,3 +135,5 @@ html { scrollbar-color: var(--lime) #0d111d; scrollbar-width: thin; }
 @media (max-width:1100px) { .hero-actions { flex-wrap:wrap; max-width:570px; } }
 @media (max-width:800px) { .hero-actions { display:grid; grid-template-columns:1fr 1fr; max-width:100%; }.button-resume { grid-column:1 / -1; justify-content:space-between; } }
 @media (prefers-reduced-motion:reduce) { .success-mark,.success-mark span,.success h3,.success p,.success-line { opacity:1; transform:none; animation:none; } .success-mark span:before { transform:rotate(45deg) scaleX(1); } .success-mark span:after { transform:rotate(-45deg) scaleX(1); } .success-line { transform:scaleX(1); } }
+.project-info { padding-right:55px; }
+@media (max-width:800px) { .project-info { padding-right:0; } }
