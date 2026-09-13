@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://s7d4007.github.io/souvik-dutta-portfolio/sitemap.xml
