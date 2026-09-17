@@ -195,6 +195,18 @@ html { scrollbar-color: var(--lime) #0d111d; scrollbar-width: thin; }
 .music-invite .invite-dismiss:hover { color:var(--white); }
 @keyframes invite-in { from { opacity:0; transform:translateY(-7px) scale(.97); } to { opacity:1; transform:none; } }
 @media (max-width:800px) { .music-invite { position:fixed; top:74px; right:6vw; max-width:calc(100vw - 12vw); } }
+.nav-links a.active { color:var(--lime); }
+.nav-links a.active:after { content:''; display:block; width:100%; height:1px; margin-top:5px; background:var(--lime); box-shadow:0 0 8px #72f1ff88; }
+
+.skills-grid .skill-group:nth-child(2) { transition-delay:.12s; }
+.skills-grid .skill-group:nth-child(3) { transition-delay:.24s; }
+.skills-grid .skill-group:nth-child(4) { transition-delay:.36s; }
+.skills-grid .skill-group > div { perspective:700px; }
+.skills-grid span { position:relative; overflow:hidden; transition:color .25s ease,background .25s ease,border-color .25s ease,transform .25s ease,box-shadow .25s ease; }
+.skills-grid span:after { content:''; position:absolute; inset:0 auto 0 -120%; width:70%; background:linear-gradient(105deg,transparent,#72f1ff2b,transparent); transform:skewX(-18deg); transition:left .45s ease; pointer-events:none; }
+.skills-grid span:hover { color:var(--white); border-color:var(--lime); background:#1d3040; transform:translateY(-5px) rotate(-1deg); box-shadow:0 8px 18px #02040b66,0 0 15px #72f1ff1c; }
+.skills-grid span:hover:after { left:135%; }
+@media (prefers-reduced-motion:reduce) { .skills-grid .skill-group,.skills-grid span,.skills-grid span:after { transition:none; } }
 
 @media (min-width:801px) {
 	.hero { display:grid; grid-template-columns:minmax(0,58%) minmax(0,42%); column-gap:0; align-items:center; }
